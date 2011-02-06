@@ -1,0 +1,29 @@
+body{
+	font-family: "Helvetica", "Aria", sans-serif;
+	margin: 1em 10%;
+}
+
+h1{
+}
+
+a{
+	color: #c60;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul{
+	padding: 0;
+}
+
+li{
+	float:left;
+	padding: 1em;
+	list-style: none;
+}
+
+#preview{
+	float:left;
+	clear:both;
+}

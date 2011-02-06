@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Slider Input Demo</title>
+	<script type="text/javascript" src="aculous/prototype.js"></script>
+	<script type="text/javascript" src="aculous/scriptaculous.js"></script>
+	<script type="text/javascript" src="aculous/effects.js"></script>
+	<script type="text/javascript" src="aculous/dragdrop.js"></script>
+	<script type="text/javascript" src="aculous/controls.js"></script>
+	<script type="text/javascript">
+	  window.onload = function(){
+	  	new Control.Slider('ageHandle', 'ageBar', {onSlide: updateAge});		
+	  
+	  function updateAge(v){
+	  	$('age').value = Math.floor(v*100);
+	  }
+	  };	   	  			  			  
+	</script>	
+  </head>
+  <body>
+	<h1>Slider Input Demo</h1>
+<form method="POST" action="">
+  <p>How old are you? <input type="text" name="age" id="age"/></p>
+  <div id="ageBar" style="width:200px; background: #000; height:5px;">
+	<div id="ageHandle" style="width:5px; height:10px; background: #000; cursor:move;"></div>
+  </div>
+  <input type="submit" value="Submit Age"/>
+</form>
+  </body>
+</html>
