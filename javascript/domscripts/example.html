@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+	<meta name="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Example</title>
+  </head>
+  <body>
+	<p id="example" style="color:grey; font-family: 'arial', sans-serif;">An example of a paragraph</p>
+	<script type="text/javascript">
+		  var para = document.getElementById("example");
+		  para.style.color = "red";
+
+		  var htmlString ="HTML String starts: \n" +
+			  "<OBJECT classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0' WIDTH='780' HEIGHT='560' id='SWFactivite1x2' ALIGN=''> " +
+			  "<PARAM NAME=movie VALUE='activite1x2.swf" + url + "'>" +
+			  "<PARAM NAME=quality VALUE=high> " +
+			  "<PARAM NAME=devicefont VALUE=true> " +
+			  "<PARAM NAME=bgcolor VALUE=#000000> " +
+			  "<EMBED src='activite1x2.swf" + url + "' " +
+			  "quality='high' devicefont='true' bgcolor='#000000'  WIDTH='780' HEIGHT='560' " +
+			  "NAME='SWFactivite1x2' ALIGN='' TYPE='application/x-shockwave-flash' PLUGINSPAGE='http://www.macromedia.com/go/getflashplayer'> " +
+			  "</EMBED> </OBJECT> ";
+		  document.write(htmlString);
+	</script>	
+  </body>
+</html>
+	
